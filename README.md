@@ -1,5 +1,7 @@
 ## DESAFIO
 <br>
+### Batalha Ninja
+
 <h2>O projeto foi desenvolvido em Angular 4 seguindo as regras do mock como informado abaixo.</h2>
 <br>
 <hr>
@@ -37,7 +39,7 @@
     <img src="src/assets/structure/structureBase.png" alt="estrutura base do projeto" width="500">
 <hr>
 <h3>A aplicação está hospedada no serviço S3 da Amazon e pode ser acessada pelo link:
-    <a href="http://desafio-batalha-ninja.s3-website-sa-east-1.amazonaws.com/">link</a>
+    <a href="http://desafio-batalha-ninja.s3-website-sa-east-1.amazonaws.com/" target="_blank">Desafio Batalha Ninja</a>
 </h3>
 <hr>
 <h2>Instruções do Jogo</h2>
