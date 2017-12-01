@@ -9,9 +9,9 @@ export class BannerComponent implements OnInit {
 	public header: { title: string; subtitle: string } = {
 		title: 'Desafio',
 		subtitle: 'Batalha Ninja'
-  };
-  
-	constructor() {}
+	};
 
-	ngOnInit() {}
+	constructor() { }
+
+	ngOnInit() { }
 }
