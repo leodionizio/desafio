@@ -1,0 +1,26 @@
+////font roboto para textos em geral
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+// font para titulo
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+// variável de font-family
+$font-family: 'Roboto', sans-serif;
+$font-title: 'Press Start 2P', cursive;
+
+// variável de cores
+$colors: (
+	primary : #0099ff,
+	secondary : #c7c7c7,
+	success : #00b300,
+	danger : #f53d3d,
+	dark : #333,
+	default : #f0f0f0
+);
+
+// border radius padrão
+$border-radius: 5px;
+// border padrão
+$border: 1px solid #999;
+
+// font color
+$font-color: map-get($colors, dark);
