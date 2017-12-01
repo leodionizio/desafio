@@ -1,13 +1,46 @@
 ## DESAFIO
 <br>
-<h2>O projeto foi desenvolvido em Angular 4 seguindo as regras do mock como pré-requisitos.</h2>
+
+## Batalha Ninja
+
+<h4>O projeto foi desenvolvido em Angular 4 seguindo as regras do mock como informado abaixo.</h4>
 <br>
 <hr>
+
+> ## TESTE FRONTEND S2IT
+
+> Você deve implementar um jogo, onde o jogador que ficar com 0% de vida perde.
+
+> ### O teste deve conter as seguintes features:
+
+> * Cada jogador deve começar com 100% de vida
+> * Dois botões, sendo um para cada jogador poder atacar o adversário
+> * Cada ataque remove 20% de vida do jogador adversário
+> * Um botão para reiniciar o jogo
+> * Quando o jogador ficar com 0% de vida, deve exibir uma mensagem informando quem é o vencedor
+
+> Abaixo segue o mock da tela:
+
+> ![alt text](https://raw.githubusercontent.com/s2it-frontend/desafio/master/mock/01.jpg "Mock")
+
+> ### Dicas
+
+> Lembre-se que isto é apenas um mock e nós estamos aberto a novas ideias.
+
+> Não é regra usar frameworks, mas caso queira, tente usar os mais novos.
+
+> O design é muito importante, mas o UX é mais.
+
+> Testes também fazem a diferença.
+
+> #### Faça um fork deste repositório e boa sorte!
+
+<br>
 <h2>O projeto segue a estrutura base conforme a imagem abaixo:</h2>
     <img src="src/assets/structure/structureBase.png" alt="estrutura base do projeto" width="500">
 <hr>
 <h3>A aplicação está hospedada no serviço S3 da Amazon e pode ser acessada pelo link:
-    <a href="http://desafio-batalha-ninja.s3-website-sa-east-1.amazonaws.com/">link</a>
+    <a href="http://desafio-batalha-ninja.s3-website-sa-east-1.amazonaws.com/" target="_blank">Desafio Batalha Ninja</a>
 </h3>
 <hr>
 <h2>Instruções do Jogo</h2>
@@ -21,14 +54,23 @@
 <hr>
 <h2>Telas do Projeto</h2>
 
+<div>
+<h5>Tela principal onde os jogadores definem seus nomes</h5>
+
 <img src="src/assets/gameimages/home.png" alt="Tela principal do jogo" width="500">
+
+<h5>Tela de batlaha entre os jogadores</h5>
 
 <img src="src/assets/gameimages/battle.png" alt="Tela de batalha do jogo" width="500">
 
+<h5>Tela de batalha entre os jogadores com o jogador um atacando</h5>
+
 <img src="src/assets/gameimages/hitting.png" alt="Tela de batalha com um dos jogadores atacando" width="500">
 
-<img src="src/assets/gameimages/end.png" alt="Tela final do jogo exibindo o vencedor" width="500">
+<h5>Tela que exibe a mensagem de qual jogador é o vencedor</h5>
 
+<img src="src/assets/gameimages/end.png" alt="Tela final do jogo exibindo o vencedor" width="500">
+</div>
 <hr>
 
 <h4>Desenvolvido por 
