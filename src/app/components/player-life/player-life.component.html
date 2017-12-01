@@ -1,0 +1,6 @@
+<div *ngIf="player" [class]="player.idName" [align]="player.idName === 'playerOne' ? 'start' : 'end'">
+  <h2>{{ player.name || 'Primeiro Jogador' }}</h2>
+  <div [class]="player.classStyle">
+    <div class="life-bar-content" [id]="player.idName"></div>
+  </div>
+</div>
