@@ -54,14 +54,23 @@
 <hr>
 <h2>Telas do Projeto</h2>
 
+<div>
+<h5>Tela principal onde os jogadores definem seus nomes</h5>
+
 <img src="src/assets/gameimages/home.png" alt="Tela principal do jogo" width="500">
+
+<h5>Tela de batlaha entre os jogadores</h5>
 
 <img src="src/assets/gameimages/battle.png" alt="Tela de batalha do jogo" width="500">
 
+<h5>Tela de batalha entre os jogadores com o jogador um atacando</h5>
+
 <img src="src/assets/gameimages/hitting.png" alt="Tela de batalha com um dos jogadores atacando" width="500">
 
-<img src="src/assets/gameimages/end.png" alt="Tela final do jogo exibindo o vencedor" width="500">
+<h5>Tela que exibe a mensagem de qual jogador é o vencedor</h5>
 
+<img src="src/assets/gameimages/end.png" alt="Tela final do jogo exibindo o vencedor" width="500">
+</div>
 <hr>
 
 <h4>Desenvolvido por 
