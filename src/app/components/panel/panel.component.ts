@@ -31,14 +31,19 @@ export class PanelComponent implements OnInit {
 		'assets/player/player2-behit.png',
 	);
 
-	public mensagem: string = '';
-
 	// CONTROLE DO ANDAMENTO DO JOGO
 	public gameInProgress: boolean = false;
 	public gameIsFinished: boolean = false;
 
 	// JOGADOR ATACANTE
-	public playerHitting: Player;
+	public playerHitting: Player = new Player(
+		'',
+		'',
+		0,
+		'',
+		'',
+		'',
+	);;
 
 	// JOGADOR VENCEDOR
 	public playerWinner: string = '';
