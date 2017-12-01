@@ -1,0 +1,29 @@
+<div class="home-page">
+
+  <h1>Jogadores</h1>
+
+  <!-- INPUT PARA DIGITAR NOME DO JOGADOR UM -->
+  <input type="text" class="input-name" [(ngModel)]="playerOne.name" [name]="playerOne.idName" maxlength="15"
+    minlength="3" tabindex="1" placeholder="Digite o nome do primeiro jogador..."> &emsp;
+
+  <!-- INPUT PARA DIGITAR NOME DO JOGADOR DOIS -->
+  <input type="text" class="input-name" [(ngModel)]="playerTwo.name" [name]="playerTwo.idName" maxlength="15"
+    minlength="3" tabindex="2" placeholder="Digite o nome do segundo jogador...">
+
+  <br>
+
+  <div align="start" class="game-instructions">
+    <h3>Instruções</h3>
+    <ul>
+      <li>Utilize os botões
+        <img src="assets/kunai.svg" alt="" width="20"> para atacar;</li>
+      <li>Utilize também teclas D (para primeiro jogador) e L (para segundo jogador) para atacar.</li>
+      <li>Cada golpe da 20% de dano ao adversário.</li>
+      <li>Quem tirar toda vida do adversário primeiro vence.</li>
+    </ul>
+  </div>
+
+  <br>
+
+  <button class="btn-ok" [disabled]="!playerOne.name || !playerTwo.name" (click)="startGame()">Iniciar Jogo</button>
+</div>
