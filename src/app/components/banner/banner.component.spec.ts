@@ -8,9 +8,9 @@ describe('BannerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BannerComponent ]
+      declarations: [BannerComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,15 +19,25 @@ describe('BannerComponent', () => {
     fixture.detectChanges();
   });
 
-  it('Devera criar o componente banner', () => {
+  // SMOKE TESTES
+  it('Devera criar o componente Banner', () => {
     expect(component).toBeTruthy();
   });
 
-  it('Devera conter um header com title Desafio', () => {
-    expect(component.header.title).toEqual('Desafio');
-  });
-  
-  it('Devera conter um header com subtitle Batalha Ninja', () => {
-    expect(component.header.subtitle).toEqual('Batalha Ninja');
-  });
+  describe('Smoke Test Components', () => {
+    it('Devera conter um objeto header', () => {
+      expect(component.header).toBeTruthy();
+      expect(typeof (component.header)).toEqual('object');
+    });
+
+    it('Devera conter um objeto header contendo title do tipo string', () => {
+      expect(component.header.title).toBeTruthy();
+      expect(typeof (component.header.subtitle)).toEqual('string');
+    });
+
+    it('Devera conter um objeto header contendo subtitle do tipo string', () => {
+      expect(component.header.subtitle).toBeTruthy();
+      expect(typeof (component.header.subtitle)).toEqual('string');
+    });
+  })
 });
