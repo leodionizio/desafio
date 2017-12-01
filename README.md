@@ -32,7 +32,7 @@
 
 > #### Faça um fork deste repositório e boa sorte!
 
-
+<br>
 <h2>O projeto segue a estrutura base conforme a imagem abaixo:</h2>
     <img src="src/assets/structure/structureBase.png" alt="estrutura base do projeto" width="500">
 <hr>
