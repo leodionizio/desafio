@@ -1,8 +1,9 @@
 ## DESAFIO
 <br>
-### Batalha Ninja
 
-<h2>O projeto foi desenvolvido em Angular 4 seguindo as regras do mock como informado abaixo.</h2>
+## Batalha Ninja
+
+<h4>O projeto foi desenvolvido em Angular 4 seguindo as regras do mock como informado abaixo.</h4>
 <br>
 <hr>
 
