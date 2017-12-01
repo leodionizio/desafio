@@ -1,0 +1,52 @@
+<app-btn-controls (restart)="restartGame($event)" (alter)="alterNames($event)"></app-btn-controls>
+
+
+<app-home *ngIf="!gameInProgress" [playerOne]="playerOne" [playerTwo]="playerTwo" (start)="startGame($event)"></app-home>
+
+<div class="container-components">
+  
+  <app-message *ngIf="gameIsFinished; else battleComponents" [playerWinner]="playerWinner"></app-message>
+
+  <ng-template #battleComponents>
+    <!-- INFORMAÇÕES DO JOGADOR -->
+    <div class="player-content">
+
+      <!-- JOGADOR UM -->
+      <app-player-life [player]="playerOne" [playerLife]="playerOne.life"></app-player-life>
+
+      <!-- VERSUS -->
+      <div class="vs" align="center">
+        <h1>X</h1>
+      </div>
+
+      <!-- JOGADOR DOIS -->
+      <app-player-life [player]="playerTwo" [playerLife]="playerTwo.life"></app-player-life>
+
+    </div>
+
+    <!-- AREA DE BATALHA -->
+    <div class="battle-content">
+
+      <!-- JOGADOR UM COMPONENT -->
+      <app-player-character [player]="playerOne" [playerHitting]="playerHitting"></app-player-character>
+
+      <!-- JOGADOR DOIS COMPONENT -->
+      <app-player-character [player]="playerTwo" [playerHitting]="playerHitting"></app-player-character>
+
+    </div>
+
+
+
+    <!-- BOTÕES DE BATALHA -->
+    <div class="btn-content">
+
+      <!-- BOTÃO PARA JOGADOR UM -->
+      <app-btn-hit [player]="playerOne" (hit)="hitting($event)"></app-btn-hit>
+
+      <!-- BOTÃO PARA JOGADOR DOIS -->
+      <app-btn-hit [player]="playerTwo" (hit)="hitting($event)"></app-btn-hit>
+
+    </div>
+
+  </ng-template>
+</div>
