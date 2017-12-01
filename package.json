@@ -1,6 +1,7 @@
 {
-  "name": "desafio-angular",
-  "version": "0.0.0",
+  "name": "desafio",
+  "version": "1.0.0",
+  "author": "leonardodionizio",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
