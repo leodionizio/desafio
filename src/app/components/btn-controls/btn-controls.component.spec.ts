@@ -8,9 +8,9 @@ describe('BtnControlsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BtnControlsComponent ]
+      declarations: [BtnControlsComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +19,21 @@ describe('BtnControlsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  // SMOKE TESTS
+  it('Devera criar o componente BtnControls', () => {
     expect(component).toBeTruthy();
+  });
+
+  describe('Smoke Test Components', () => {
+
+    it('Devera criar o botao com id restart', () => {
+      const compiled = fixture.debugElement.nativeElement;
+      expect(compiled.querySelector('#restart')).toBeTruthy();
+    });
+
+    it('Devera criar o botao com id alterNames', () => {
+      const compiled = fixture.debugElement.nativeElement;
+      expect(compiled.querySelector('#alterNames')).toBeTruthy();
+    });
   });
 });
