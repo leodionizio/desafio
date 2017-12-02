@@ -15,6 +15,14 @@
     -webkit-border-radius: $radius;
 }
 
+// mixin para transform
+@mixin transformTX($positionX) {
+    -ms-transform: translateX($positionX);
+    -webkit-transform: translateX($positionX);
+    transform: translateX($positionX);
+}
+
+// placeholder da progessbar
 %progressbar {
     height: 18px;
     width: 100%;
@@ -23,6 +31,7 @@
     @include border-radius($border-radius);
 }
 
+// placeholder do botao
 %button {
     margin: 4%;
     width: 180px;
@@ -48,6 +57,7 @@
     }
 }
 
+// placeholder para o botao inverso
 %button-inverse {
     @extend %button;
     margin: 0 10px;
@@ -145,68 +155,54 @@ body {
     }
 }
 
+// conteudo do componente de batalha
 .battle-content {
     height: 150px;
     margin: 4% 0 7%;
     width: 100%;
     display: inline-block;
     transition-delay: 2;
+    // jogador um
     .playerOne {
         width: 50%;
         float: left;
     }
+    // jogador dois
     .playerTwo {
         width: 50%;
         float: right;
     }
+
+    // animação do jogador um atacando
     .playerOneHitting {
-        -ms-transform: translateX(350%);
-        /* IE 9 */
-        -webkit-transform: translateX(350%);
-        /* Safari */
-        transform: translateX(350%);
+        @include transformTX(350%);        
     }
+
+    // animação do jogador dois atacando
     .playerTwoHitting {
-        -ms-transform: translateX(-350%);
-        /* IE 9 */
-        -webkit-transform: translateX(-350%);
-        /* Safari */
-        transform: translateX(-350%);
+        @include transformTX(350%);
     }
+
+    // tratagem da animação com outras resoluções
     @media screen and(max-width: 1100px) {
         .playerOneHitting {
-            -ms-transform: translateX(300%);
-            /* IE 9 */
-            -webkit-transform: translateX(300%);
-            /* Safari */
-            transform: translateX(300%);
+            @include transformTX(300%);   
         }
         .playerTwoHitting {
-            -ms-transform: translateX(-300%);
-            /* IE 9 */
-            -webkit-transform: translateX(-300%);
-            /* Safari */
-            transform: translateX(-300%);
+            @include transformTX(300%);
         }
     }
     @media screen and(max-width: 800px) {
         .playerOneHitting {
-            -ms-transform: translateX(200%);
-            /* IE 9 */
-            -webkit-transform: translateX(200%);
-            /* Safari */
-            transform: translateX(200%);
+            @include transformTX(200%);
         }
         .playerTwoHitting {
-            -ms-transform: translateX(-200%);
-            /* IE 9 */
-            -webkit-transform: translateX(-200%);
-            /* Safari */
-            transform: translateX(-200%);
+            @include transformTX(200%);            
         }
     }
 }
 
+// mensagem exibida no fim do jogo de quem venceu
 .msg-endGame {
     color: map-get($colors, default);
     h1 {
@@ -246,6 +242,7 @@ body {
     }
 }
 
+// conteudo da tela principal
 .home-page {
     position: fixed;
     top: 0;
@@ -258,6 +255,8 @@ body {
     padding-top: 5%;
     text-align: center;
     color: map-get($colors, default);
+
+    // inputs
     .input-name {
         width: 350px;
         line-height: 2.2em;
@@ -275,6 +274,8 @@ body {
             border-color: map-get($colors, default);
         }
     }
+
+    // instruções de jogo
     .game-instructions {
         margin: 3% 30%;
         h3 {
@@ -292,6 +293,7 @@ body {
     }
 }
 
+// botões de controle reiniciar e alterar nomes
 .btn-controls {
     display: inline-block;
     width: 100%;

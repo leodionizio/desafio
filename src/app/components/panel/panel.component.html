@@ -1,10 +1,13 @@
+<!-- COMPONENTE CONTENDO OS BOTOES REINICIAR E ALTERAR NOME -->
 <app-btn-controls (restart)="restartGame($event)" (alter)="alterNames($event)"></app-btn-controls>
 
-
+<!-- COMPONENTE CONTENDO A TELA INICIAL DO JOGO -->
 <app-home *ngIf="!gameInProgress" [playerOne]="playerOne" [playerTwo]="playerTwo" (start)="startGame($event)"></app-home>
 
+<!-- COMPONENTE CONTENDO CONTEUDO DO JOGO (LIFEBAR, PLAYERS, CHARACTERS, BUTTONS) -->
 <div class="container-components">
   
+  <!-- COMPONENTE CONTENDO A MENSAGEM DE QUAL JOGADOR É O VENCEDOR -->
   <app-message *ngIf="gameIsFinished; else battleComponents" [playerWinner]="playerWinner"></app-message>
 
   <ng-template #battleComponents>

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-// <app-painel></app-painel>
 @Component({
 	selector: 'app-root',
 	template: `

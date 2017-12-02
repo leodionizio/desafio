@@ -1,9 +1,11 @@
 <div [class]="player.idName" align="center">
   
+  <!-- IMAGEM DO NINJA NA POSIÇÃO NORMAL -->
   <img *ngIf="!playerHitting || (playerHitting && playerHitting.idName == player.idName)"
   id="playerHitting" [src]="player.imgHit" alt="Ninja segurando uma espada" width="120" 
   [ngClass]="playerHittingClass()">
   
+  <!-- IMAGEM DO NINJA QUANDO ESTA SENDO ATACADO -->
   <img *ngIf="playerHitting && playerHitting.idName !== player.idName"
   id="playerBeHit" [src]="player.imgBeHit"
   alt="Ninja segurando uma espada levantada para cima" width="120">
